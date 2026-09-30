@@ -2,6 +2,8 @@
 
 Sistema simples de chamados de suporte (CRUD) feito com PHP, MySQL e Docker.
 
+![Tela do sistema](docs/tela-sistema.png)
+
 ## Funcionalidades
 
 - Abrir chamados (título e descrição)
