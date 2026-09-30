@@ -39,7 +39,7 @@ Sistema simples de chamados de suporte (CRUD) feito com PHP, MySQL e Docker.
 
        docker compose up -d --build
 
-4. Acesse http://localhost:8080
+4. Abra no navegador: `http://localhost:8080`
 
 ## Estrutura
 
