@@ -5,3 +5,9 @@ CREATE TABLE IF NOT EXISTS chamados (
   status ENUM('aberto','em_andamento','fechado') NOT NULL DEFAULT 'aberto',
   criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(50) NOT NULL UNIQUE,
+  senha_hash VARCHAR(255) NOT NULL,
+  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

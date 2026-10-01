@@ -22,6 +22,7 @@ Sistema simples de chamados de suporte (CRUD) feito com PHP, MySQL e Docker.
 - Consultas com prepared statements (proteção contra SQL injection)
 - Saída escapada com `htmlspecialchars` (proteção contra XSS)
 - Credenciais fora do código, em arquivo `.env` (não versionado)
+- Login com senhas protegidas por `password_hash` e sessões com cookie `HttpOnly`
 - Tabela criada automaticamente por `db/init.sql`
 
 ## Como rodar
@@ -39,7 +40,11 @@ Sistema simples de chamados de suporte (CRUD) feito com PHP, MySQL e Docker.
 
        docker compose up -d --build
 
-4. Abra no navegador: `http://localhost:8080`
+4. Crie o usuário administrador (o script pede a senha):
+
+       docker compose exec web php /scripts/criar_usuario.php admin
+
+5. Abra no navegador `http://localhost:8080` e entre com esse usuário
 
 ## Estrutura
 
