@@ -1,6 +1,6 @@
 # Help Desk PHP
 
-Sistema simples de chamados de suporte (CRUD) feito com PHP, MySQL e Docker.
+Sistema de chamados de suporte (CRUD) com login, feito com PHP, MySQL e Docker.
 
 ![Tela do sistema](docs/tela-sistema.png)
 
@@ -53,6 +53,11 @@ Sistema simples de chamados de suporte (CRUD) feito com PHP, MySQL e Docker.
     ├── docker-compose.yml
     ├── .env.example
     ├── db/init.sql
+    ├── scripts/criar_usuario.php
     └── src/
+        ├── auth.php
         ├── db.php
-        └── index.php
+        ├── index.php
+        ├── login.php
+        ├── logout.php
+        └── style.css
