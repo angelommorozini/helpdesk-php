@@ -10,6 +10,7 @@ Sistema de chamados de suporte (CRUD) com login, feito com PHP, MySQL e Docker.
 - Listar chamados
 - Alterar o status: aberto, em andamento, fechado
 - Excluir chamados
+- Login com usuário e senha, com logout e páginas protegidas por sessão
 
 ## Tecnologias
 
